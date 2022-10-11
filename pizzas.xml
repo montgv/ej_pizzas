@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
-<!DOCTYPE pizzas SYSTEM "pizzas.dtd">
 <pizzas>
-  <pizza nombre="Barbacoa" precio="8">
-    <ingrediente nombre="Salsa Barbacoa" />
-    <ingrediente nombre="Mozzarella" />
-    <ingrediente nombre="Pollo" />
-    <ingrediente nombre="Bacon" />
-    <ingrediente nombre="Ternera" />
+  <pizza>
+    <nombre>"Barbacoa" </nombre>
+    <precio>8 </precio>
+    <ingrediente>"Salsa Barbacoa"</ingrediente>
+    <ingrediente>"Mozzarella"</ingrediente>
+    <ingrediente>"Pollo"</ingrediente>
+    <ingrediente>"Bacon"</ingrediente>
+    <ingrediente>"Ternera"</ingrediente>
   </pizza>
-  <pizza nombre="Margarita" precio="6">
-    <ingrediente nombre="Tomate" />
-    <ingrediente nombre="Jamón" />
-    <ingrediente nombre="Queso" />
+  <pizza>
+    <nombre>"Margarita" </nombre>
+    <precio>6 </precio>
+    <ingrediente>"Tomate"</ingrediente>
+    <ingrediente>"Jamon"</ingrediente>
+    <ingrediente>"Queso"</ingrediente>
   </pizza>
 </pizzas>

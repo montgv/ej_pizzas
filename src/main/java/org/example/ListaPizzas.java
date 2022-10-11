@@ -8,57 +8,23 @@ import java.util.ArrayList;
 @XmlRootElement()
 public class ListaPizzas {
 
-    private ArrayList<Pizza> listaPizzaz;
+    private ArrayList<Pizza> listaPizzas;
 
-    private String nombre;
-
-    private Double precio;
-
-    private String[] ingredientes;
-
-    public ListaPizzas(ArrayList<Pizza> listaPizzaz, String nombre, Double precio, String[] ingredientes) {
-        this.listaPizzaz = listaPizzaz;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.ingredientes = ingredientes;
+    public ListaPizzas(ArrayList<Pizza> listaPizzas) {
+        super();
+        this.listaPizzas = listaPizzas;
     }
 
     public ListaPizzas() {
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(Double precio) {
-        this.precio = precio;
-    }
-
-    @XmlElementWrapper(name = "Ingredientes")
-    @XmlElement(name = "Ingrediente")
-    public String[] getIngredientes() {
-        return ingredientes;
-    }
-
-    public void setIngredientes(String[] ingredientes) {
-        this.ingredientes = ingredientes;
-    }
-
     @XmlElementWrapper(name = "ListaPizzas")
     @XmlElement(name = "Pizza")
-    public ArrayList<Pizza> getListaPizzaz() {
-        return listaPizzaz;
+    public ArrayList<Pizza> getListaPizzas() {
+        return listaPizzas;
     }
 
-    public void setListaPizzaz(ArrayList<Pizza> listaPizzaz) {
-        this.listaPizzaz = listaPizzaz;
+    public void setListaPizzas(ArrayList<Pizza> listaPizzas) {
+        this.listaPizzas = listaPizzas;
     }
 }

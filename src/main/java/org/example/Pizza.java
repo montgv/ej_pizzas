@@ -9,12 +9,13 @@ public class Pizza {
 
     private Double precio;
 
-    private String[] ingredientes;
+    private String[] ingrediente;
 
-    public Pizza(String nombre, Double precio, String[] ingredientes) {
+    public Pizza(String nombre, Double precio, String[] ingrediente) {
+        super();
         this.nombre = nombre;
         this.precio = precio;
-        this.ingredientes = ingredientes;
+        this.ingrediente = ingrediente;
     }
 
     public Pizza() {
@@ -36,11 +37,11 @@ public class Pizza {
         this.precio = precio;
     }
 
-    public String[] getIngredientes() {
-        return ingredientes;
+    public String[] getIngrediente() {
+        return ingrediente;
     }
 
-    public void setIngredientes(String[] ingredientes) {
-        this.ingredientes = ingredientes;
+    public void setIngrediente(String[] ingrediente) {
+        this.ingrediente = ingrediente;
     }
 }
