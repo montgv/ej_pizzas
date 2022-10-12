@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
-@XmlRootElement()
+@XmlRootElement(name = "Pizerria")
 public class ListaPizzas {
 
     private ArrayList<Pizza> listaPizzas;

@@ -3,17 +3,22 @@
   <pizza>
     <nombre>"Barbacoa" </nombre>
     <precio>8 </precio>
-    <ingrediente>"Salsa Barbacoa"</ingrediente>
-    <ingrediente>"Mozzarella"</ingrediente>
-    <ingrediente>"Pollo"</ingrediente>
-    <ingrediente>"Bacon"</ingrediente>
-    <ingrediente>"Ternera"</ingrediente>
+    <ingredientes>
+      <ingrediente>"Salsa Barbacoa"</ingrediente>
+      <ingrediente>"Mozzarella"</ingrediente>
+      <ingrediente>"Pollo"</ingrediente>
+      <ingrediente>"Bacon"</ingrediente>
+      <ingrediente>"Ternera"</ingrediente>
+    </ingredientes>
+
   </pizza>
   <pizza>
     <nombre>"Margarita" </nombre>
     <precio>6 </precio>
-    <ingrediente>"Tomate"</ingrediente>
-    <ingrediente>"Jamon"</ingrediente>
-    <ingrediente>"Queso"</ingrediente>
+    <ingredientes>
+      <ingrediente>"Tomate"</ingrediente>
+      <ingrediente>"Jamon"</ingrediente>
+      <ingrediente>"Queso"</ingrediente>
+    </ingredientes>
   </pizza>
 </pizzas>

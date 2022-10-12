@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class Xml_To_Jaxb {
     public static void main(String[] args) throws JAXBException, FileNotFoundException {
-        String miArchivo = "pizzas.xml";
+        //String miArchivo = "pizzas.xml";
 
         //Creamos el contexto indicando la clase raiz
         JAXBContext context = JAXBContext.newInstance(ListaPizzas.class);
@@ -19,7 +19,7 @@ public class Xml_To_Jaxb {
         Unmarshaller unmarshaller = context.createUnmarshaller();
 
         //Obtenemos los datos de un Reader con el metodo unmarshaller
-        ListaPizzas listaPizzas2 = (ListaPizzas) unmarshaller.unmarshal(new FileReader(miArchivo));
+        ListaPizzas listaPizzas2 = (ListaPizzas) unmarshaller.unmarshal(new FileReader("pizzas.xml"));
 
         //Extraemos los datos y los mostramos por pantalla
         System.out.println("Lista de las pizzas: ");
@@ -28,7 +28,7 @@ public class Xml_To_Jaxb {
         for (Pizza pizza : lista) {
             System.out.println("\tNombre de la pizza: " + pizza.getNombre());
             System.out.println("\tPrecio de la pizza: " + pizza.getPrecio());
-            System.out.println("\tIngrediente de la pizza: " + Arrays.toString(pizza.getIngrediente()));
+            System.out.println("\tIngredientes de la pizza: " + Arrays.toString(pizza.getIngredientes()));
         }
     }
 }
