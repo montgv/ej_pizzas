@@ -29,6 +29,7 @@ public class Xml_To_Jaxb {
             System.out.println("\tNombre de la pizza: " + pizza.getNombre());
             System.out.println("\tPrecio de la pizza: " + pizza.getPrecio());
             System.out.println("\tIngredientes de la pizza: " + Arrays.toString(pizza.getIngredientes()));
+            System.out.println();
         }
     }
 }

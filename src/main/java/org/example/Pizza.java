@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlType;
 import java.util.Arrays;
 
-@XmlType (propOrder = {"nombre", "precio", "ingredientes", "ingrediente"})
+@XmlType (propOrder = {"nombre", "precio", "ingredientes"})
 public class Pizza {
 
     private String nombre;
@@ -14,14 +14,11 @@ public class Pizza {
 
     private String[] ingredientes;
 
-    private String ingrediente;
-
-    public Pizza(String nombre, Double precio, String[] ingredientes, String ingrediente) {
+    public Pizza(String nombre, Double precio, String[] ingredientes) {
         super();
         this.nombre = nombre;
         this.precio = precio;
         this.ingredientes = ingredientes;
-        this.ingrediente = ingrediente;
     }
 
     public Pizza() {
@@ -53,21 +50,12 @@ public class Pizza {
         this.ingredientes = ingredientes;
     }
 
-    public String getIngrediente() {
-        return ingrediente;
-    }
-
-    public void setIngrediente(String ingrediente) {
-        this.ingrediente = ingrediente;
-    }
-
     @Override
     public String toString() {
         return "Pizza {" +
                 "nombre='" + nombre + '\'' +
                 ", precio=" + precio +
                 ", ingredientes=" + Arrays.toString(ingredientes) +
-                ", ingrediente='" + ingrediente + '\'' +
                 '}';
     }
 }

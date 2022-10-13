@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
-@XmlRootElement(name = "Pizerria")
+@XmlRootElement(name = "pizzas")
 public class ListaPizzas {
 
     private ArrayList<Pizza> listaPizzas;
@@ -18,8 +18,7 @@ public class ListaPizzas {
     public ListaPizzas() {
     }
 
-    @XmlElementWrapper(name = "ListaPizzas")
-    @XmlElement(name = "Pizza")
+    @XmlElement(name = "pizza")
     public ArrayList<Pizza> getListaPizzas() {
         return listaPizzas;
     }
