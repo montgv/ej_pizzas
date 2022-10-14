@@ -10,8 +10,6 @@ import java.util.Arrays;
 
 public class Xml_To_Jaxb {
     public static void main(String[] args) throws JAXBException, FileNotFoundException {
-        //String miArchivo = "pizzas.xml";
-
         //Creamos el contexto indicando la clase raiz
         JAXBContext context = JAXBContext.newInstance(ListaPizzas.class);
 

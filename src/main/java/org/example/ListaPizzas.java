@@ -30,7 +30,6 @@ public class ListaPizzas {
     public ArrayList<Pizza> getListaPizzas() {
         return listaPizzas;
     }
-
     public void setListaPizzas(ArrayList<Pizza> listaPizzas) {
         this.listaPizzas = listaPizzas;
     }

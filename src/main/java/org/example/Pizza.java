@@ -3,19 +3,15 @@ package org.example;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlType;
-import java.util.Arrays;
 
 //Definimos el orden en el que se van a escribir los elementos
 @XmlType (propOrder = {"nombre", "precio", "ingredientes"})
 
 //Definimos la clase Pizza
 public class Pizza {
-
     //Declaramos los atributos de la clase
     private String nombre;
-
     private Double precio;
-
     private String[] ingredientes;
 
     //Creamos el constructor con los atributos
@@ -34,15 +30,12 @@ public class Pizza {
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public Double getPrecio() {
         return precio;
     }
-
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
@@ -53,9 +46,7 @@ public class Pizza {
     public String[] getIngredientes() {
         return ingredientes;
     }
-
     public void setIngredientes(String[] ingredientes) {
         this.ingredientes = ingredientes;
     }
-
 }
